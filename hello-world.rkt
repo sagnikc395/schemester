@@ -32,3 +32,12 @@ saying
 '(1 2)
 ; + turns into data !!!
 '(+ 1 2)
+
+;; creating our own procedures 
+(lambda (x) (* x 2))
+
+(define double (lambda (x) (* x 2)))
+
+(double 144)
+(double 256)
+
