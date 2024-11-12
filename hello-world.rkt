@@ -41,3 +41,18 @@ saying
 (double 144)
 (double 256)
 
+;; list of symbol lambda 
+'(lambda (x) (* x 2))
+;;code and data are not far apart !
+
+(define name "Jane")
+(string-append "Hello " name "!")
+(string-append "Yay" "!")
+
+(define greet (lambda (name)
+    (string-append "Hello " name "!")))
+
+greet
+
+(greet "Sagnik")
+
