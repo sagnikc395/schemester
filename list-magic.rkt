@@ -51,3 +51,20 @@
 (cons 'a 'b)
 
 
+(println "The current list is : ")
+(cons 1 (cons 2 '()))
+(println "After cdr :")
+(cdr '(1 2))
+(println "Finally:")
+(car (cdr '(1 2 )))
+
+
+;; since in lisp code and data are the same , we can pull of the list off as
+;; note here the expression itself is being treated as a list
+
+(car '(let ((name "Slughorn"))
+        (string-append "Hello Professor" name "!")))
+
+( car(cdr '(let ((name "Slughorn"))
+        (string-append "Hello Professor" name "!"))))
+
