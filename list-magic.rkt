@@ -68,3 +68,13 @@
 ( car(cdr '(let ((name "Slughorn"))
         (string-append "Hello Professor" name "!"))))
 
+(cdr '(let ((name "Slughorn"))
+        (string-append "Hello Professor" name "!")))
+
+;; we can also use pattern matching
+
+(require racket/match)
+
+(match '(1 2 3)
+  ((first rest ...)
+  (format "The first was ~a the rest was ~a" first rest)))
