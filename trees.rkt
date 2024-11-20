@@ -30,3 +30,8 @@
 (define ctn 12)
 
 (make-countdown ctn)
+
+(define ctdn (make-countdown 12))
+(ctdn)
+
+

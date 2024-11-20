@@ -2,4 +2,4 @@
 
 Beginner's journey through learning Racket/Scheme in 1 hour.
 
-Current Timestamp: 34:43
+Current Timestamp: 56:44
