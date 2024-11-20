@@ -98,3 +98,33 @@
 ;; instace of the abstract cons
 (define ac (abstract-cons 'apple 'banana))
 
+(ac 'car)
+
+
+(ac 'cdr)
+
+;;closures are there itself the data structures; one of these procedures remembers themseleves as data and remembers them in the inner context.
+
+(string-length "cat")
+
+(string-length "gorilla")
+
+(define animals '("cat" "dog" "gorilla" "salamander"))
+
+;; mapping the animals to its string-length
+
+(map string-length animals)
+
+
+;; our own mapper
+
+(define (symbol-length sym)
+  (string-length (symbol->string sym)))
+
+
+(map symbol-length '(peanut butter))
+
+(map (lambda (sym)
+       (string-length (symbol->string sym)))
+     '(peanut butter))
+
