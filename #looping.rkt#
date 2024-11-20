@@ -27,3 +27,4 @@
                      (string-downcase str)))
            '("apples" "bananas" "orange"))
 
+
