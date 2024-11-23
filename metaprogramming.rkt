@@ -33,3 +33,28 @@
 ;; (define-syntax-rule (when test . body)
 ;;   `(if ,test
 ;;        ,(cons 'begin body)))
+
+
+(when (string? 42)
+  (display "OH YEAH !!!\n")
+  (display "IT'S A STRING!\n"))
+
+
+;;another example
+(when (string? "foo")
+  (display "OH YEAH!!!\n")
+  (display "IT's A STRING!\n"))
+
+
+;;patternfy this to make a better version of for loops
+;; can make a pattern matching using macros ; if our programming language doesnt come with it.
+
+(define-syntax-rule (for (id lst) body ...)
+  (for-each (lambda (id)
+              body ...)
+            lst))
+
+(for (str '("apples" "bananas" "pears"))
+   (format "I JUST LOVE ~a!!!\n"
+           (string-upcase str)))
+
